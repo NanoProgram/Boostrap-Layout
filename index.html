@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Clases</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6e04df82a0.js" crossorigin="anonymous"></script>
+</head>
+
+<body style="font-family: 'Source Code Pro', monospace;">
+  <nav class="navbar bg-dark">
+    <div class="container">
+      <a class="navbar-brand fs-3" href="#" style="color: white;">
+        <i class="fa-brands fa-instagram"></i>
+        Nano
+      </a>
+      <form>
+        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#ModalIG"><strong>Create a New
+          Post</strong></button>
+        <button class="btn btn-warning dropdown dropdown-toggle" type="button" data-bs-toggle="dropdown"
+          aria-expanded="false"><i class="fa-solid fa-gear"></i>
+      </form>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Profile</a></li>
+        <li><a class="dropdown-item" href="#">Accesibility</a></li>
+        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a style="color: darkorange;" class="dropdown-item" href="#">Log Out</a></li>
+      </ul></button>
+    </div>
+    <!--Construcción del Modal Inicia-->
+  <div class="modal fade" id="ModalIG" tabindex="-1" aria-labelledby="ModalIGLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title fs-5" id="ModalIGLabel">Create a new post</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <h6>Caption:</h6>
+            <input class="form-control" placeholder="Add the caption of your post here">
+            <br>
+            <button type="button" class="btn border" style="background-color: rgba(181, 178, 178, 10%);"><i class="fa-solid fa-camera-retro"></i></button>
+            <button type="button" class="btn border" style="background-color: rgba(181, 178, 178, 10%);"><i class="fa-solid fa-location-dot"></i></button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Publish</button>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+    <!--Construcción del Modal Termina-->
+  </nav>
+
+  <ul class="nav nav-tabs justify-content-center">
+  <li class="nav-item">
+    <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#grid" type="button" role="tab" aria-controls="grid" aria-selected="true"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-grid-3x3" viewBox="0 0 16 16">
+  <path d="M0 1.5A1.5 1.5 0 0 1 1.5 0h13A1.5 1.5 0 0 1 16 1.5v13a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 14.5v-13zM1.5 1a.5.5 0 0 0-.5.5V5h4V1H1.5zM5 6H1v4h4V6zm1 4h4V6H6v4zm-1 1H1v3.5a.5.5 0 0 0 .5.5H5v-4zm1 0v4h4v-4H6zm5 0v4h3.5a.5.5 0 0 0 .5-.5V11h-4zm0-1h4V6h-4v4zm0-5h4V1.5a.5.5 0 0 0-.5-.5H11v4zm-1 0V1H6v4h4z"/>
+</svg></button>
+  </li>
+  <li class="nav-item">
+    <button class="nav-link" data-bs-toggle="tab" data-bs-target="#square" type="button" role="tab" aria-controls="square" aria-selected="false"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-app" viewBox="0 0 16 16">
+  <path d="M11 2a3 3 0 0 1 3 3v6a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5a3 3 0 0 1 3-3h6zM5 1a4 4 0 0 0-4 4v6a4 4 0 0 0 4 4h6a4 4 0 0 0 4-4V5a4 4 0 0 0-4-4H5z"/>
+</svg></button>
+  </li>
+</ul>
+  <br>
+
+<div class="tab-content">
+  <!--Scroll-->
+  <div class="tab-pane fade show active" id="grid" role="tabpanel" aria-labelledby="home-tab"><div class="container text-center">
+    <div class="row gx-3 gy-2">
+      <div class="col-xl-4"><img src="http://picsum.photos/id/537/430"></img></div>
+      <div class="col-xl-4"><img src="https://placedog.net/430/430?id=144"></img></div>
+      <div class="col-xl-4"><img src="http://picsum.photos/id/237/430"></img></div>
+      <div class="col-xl-4"><img src="http://picsum.photos/id/1015/430"></img></div>
+      <div class="col-xl-4"><img src="http://picsum.photos/id/564/430"></img></div>
+      <div class="col-xl-4"><img src="http://picsum.photos/id/434/430"></img></div>
+      <div class="col-xl-4"><img src="http://picsum.photos/id/110/430"></img></div>
+      <div class="col-xl-4"><img src="http://picsum.photos/id/164/430"></img></div>
+      <div class="col-xl-4"><img src="http://picsum.photos/id/184/430"></img></div>
+    </div>
+  </div></div>
+  <!--Square-->
+  <div class="tab-pane fade" id="square" role="tabpanel" aria-labelledby="profile-tab"><div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-5 justify-content-center border border-dark m-0 p-0" style="background-color: rgba(181, 178, 178, 10%);">
+        <div class="p-2"  style="display: flex;">
+          <h5 style="width: 90%; padding-top: 10px;"><strong>A Sky Full of Stars!</strong></h5>
+          <h7 style="font-size: 14px;">24/09</h7>
+        </div><img  style="width: 100%;"  src="http://picsum.photos/id/537/430"></img>
+        <div class="p-2">
+          <h6><strong>1800 Likes</strong></h6>
+          <p><strong>Nano</strong> 'Cause you're a sky, 'cause you're a sky full of stars
+I'm gonna give you my heart</p>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row justify-content-center">
+      <div class="col-lg-5 justify-content-center border border-dark m-0 p-0" style="background-color: rgba(181, 178, 178, 10%);">
+        <div class="p-2" style="display: flex;">
+          <h5 style="width: 90%; padding-top: 10px;"><strong>Concentrated Doggo!</strong></h5>
+          <h7 style="font-size: 14px;">11/12</h7>
+        </div><img style="width: 100%;" src="https://placedog.net/430/430?id=144"></img>
+        <div class="p-2">
+          <h6><strong>10.000 Likes</strong></h6>
+          <p><strong>Nano</strong> Wuf! Wuf!</p>
+        </div>
+    </div>
+    </div>
+    <br>
+    <div class="row justify-content-center">
+      <div class="col-lg-5 justify-content-center border border-dark m-0 p-0" style="background-color: rgba(181, 178, 178, 10%);">
+        <div class="p-2" style="display: flex;">
+          <h5 style="width: 90%; padding-top: 10px;"><strong>Orange Beauty!</strong></h5>
+          <h7 style="font-size: 14px;">04/24</h7>
+        </div><img style="width: 100%;" src="http://picsum.photos/id/564/430/660"></img>
+        <div class="p-2">
+          <h6><strong>2500 Likes</strong></h6>
+          <p><strong>Nano</strong> Some Day My Friend!!</p>
+        </div>
+    </div>
+  </div>
+    <br>
+    <br>
+  </div></div>
+</div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
+    integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
